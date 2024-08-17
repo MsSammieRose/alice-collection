@@ -1,4 +1,5 @@
 import { extendTheme } from "@chakra-ui/react";
+import "@fontsource/goudy-bookletter-1911";
 
 const theme = extendTheme({
   colors: {
@@ -7,7 +8,7 @@ const theme = extendTheme({
     border: "#5e17eb",
   },
   fonts: {
-    heading: `'Georgia', sans-serif`,
+    heading: `'Goudy Bookletter 1911', sans-serif`,
     body: `'Tahoma', sans-serif`,
   },
 });
