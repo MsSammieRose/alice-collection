@@ -26,8 +26,6 @@ const Navigation: React.FC = () => {
                 width="100px"
                 fontFamily={"heading"}
                 _hover={{
-                  borderBottomColor: "grey",
-                  borderBottomWidth: "2px",
                   fontWeight: "bold",
                 }}
                 key={item}
