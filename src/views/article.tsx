@@ -1,4 +1,5 @@
 import * as React from "react";
+import { useState } from "react";
 import posts from "../database/posts";
 import {
   Card,
@@ -8,16 +9,12 @@ import {
   Image,
   Flex,
   Tag,
+  Select,
+  Box,
+  Divider,
+  Center,
 } from "@chakra-ui/react";
 
-// Define the Section interface
-interface Section {
-  id: number;
-  title: string;
-  content: string;
-}
-
-// Define the Post interface
 interface Post {
   id: number;
   year: string;
@@ -30,75 +27,118 @@ interface Post {
   condition: string;
 }
 
-// Type the posts array
 const typedPosts: Post[] = posts;
 
 const Article: React.FC = () => {
+  const [sortCriteria, setSortCriteria] = useState<string>("year");
+
+  const handleSortChange = (event: React.ChangeEvent<HTMLSelectElement>) => {
+    setSortCriteria(event.target.value);
+  };
+
+  const sortedPosts = [...typedPosts].sort((a, b) => {
+    if (sortCriteria === "year") {
+      return a.year.localeCompare(b.year);
+    } else if (sortCriteria === "price") {
+      return parseInt(a.price) - parseInt(b.price);
+    }
+    return 0;
+  });
+
   return (
-    <Flex
-      gap="4"
-      marginTop={4}
-      wrap="wrap"
-      alignItems="center"
-      justifyContent="center"
-    >
-      {typedPosts.map((post) => (
-        <Card
-          key={post.id}
-          variant="outline"
-          borderColor="paper"
-          backgroundColor="paper"
-          maxWidth="340px"
-          minHeight="550px"
-          _hover={{
-            border: "2px dashed",
-            backgroundColor: "#FFF",
-            borderColor: "paper",
-            cursor: "pointer",
+    <Box>
+      <Center>
+        <Divider
+          style={{
+            borderColor: "#f0e5d1",
+            opacity: 1,
+            borderBottomWidth: "4px",
           }}
+          maxWidth="800px"
+        />
+      </Center>
+      <Flex justifyContent="center" margin={6}>
+        <label htmlFor="sort">
+          <Heading as="h3" size="md" marginTop={2} marginRight={2}>
+            Sort by:
+          </Heading>
+        </label>
+        <Select
+          id="sort"
+          width="200px"
+          value={sortCriteria}
+          onChange={handleSortChange}
         >
-          <CardHeader>
-            <Image
-              borderRadius="5px"
-              boxSize="300px"
-              src={"/" + post.id + ".jpg"}
-              objectFit="cover"
-              alt={post.publisher}
-            />
-            <Tag
-              size="xs"
-              variant="solid"
-              colorScheme="blackAlpha"
-              marginTop="-25px"
-              marginLeft="10px"
-              paddingLeft={1}
-              paddingRight={1}
-            >
-              ISBN {post.ISBN}
-            </Tag>
-            <Tag
-              size="lg"
-              variant="solid"
-              colorScheme="whiteAlpha"
-              marginTop={2}
-            >
-              <Heading size="md" color="black" marginBottom={0}>
-                {post.year + ": " + post.publisher}
-              </Heading>
-            </Tag>
-          </CardHeader>
-          <CardBody paddingLeft={8}>
-            <p>
-              Illustrated by <strong>{post.illustrator}</strong>
-            </p>
-            <p>
-              Purchased for ${post.price}CAD from {post.purchased} in{" "}
-              {post.condition} Condition
-            </p>
-          </CardBody>
-        </Card>
-      ))}
-    </Flex>
+          <option value="year">Year</option>
+          <option value="price">Purchase Price</option>
+        </Select>
+      </Flex>
+
+      <Flex
+        gap="4"
+        marginTop={4}
+        wrap="wrap"
+        alignItems="center"
+        justifyContent="center"
+      >
+        {sortedPosts.map((post) => (
+          <Card
+            key={post.id}
+            variant="outline"
+            borderColor="paper"
+            backgroundColor="paper"
+            maxWidth="340px"
+            minHeight="550px"
+            _hover={{
+              border: "2px dashed",
+              backgroundColor: "#FFF",
+              borderColor: "paper",
+              cursor: "pointer",
+            }}
+          >
+            <CardHeader>
+              <Image
+                borderRadius="5px"
+                boxSize="300px"
+                src={"/" + post.id + ".jpg"}
+                objectFit="cover"
+                alt={post.publisher}
+              />
+              <Tag
+                size="xs"
+                variant="solid"
+                colorScheme="blackAlpha"
+                marginTop="-25px"
+                marginLeft="10px"
+                paddingLeft={1}
+                paddingRight={1}
+              >
+                ISBN {post.ISBN}
+              </Tag>
+              <Tag
+                size="lg"
+                variant="solid"
+                colorScheme="whiteAlpha"
+                marginTop={2}
+              >
+                <Heading size="md" color="black" marginBottom={0}>
+                  {post.year + ": " + post.publisher}
+                </Heading>
+              </Tag>
+            </CardHeader>
+            <CardBody paddingLeft={8}>
+              <p>
+                Illustrated by <strong>{post.illustrator}</strong>
+              </p>
+              <p>
+                Purchased for ${post.price}CAD from {post.purchased} in{" "}
+                {post.condition} Condition
+              </p>
+            </CardBody>
+          </Card>
+        ))}
+      </Flex>
+    </Box>
   );
 };
 
