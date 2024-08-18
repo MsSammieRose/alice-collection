@@ -50,6 +50,12 @@ const Article: React.FC = () => {
           backgroundColor="paper"
           maxWidth="340px"
           minHeight="550px"
+          _hover={{
+            border: "2px dashed",
+            backgroundColor: "#FFF",
+            borderColor: "paper",
+            cursor: "pointer",
+          }}
         >
           <CardHeader>
             <Image
