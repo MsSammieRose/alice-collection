@@ -16,8 +16,12 @@ const Navigation: React.FC = () => {
         <HStack spacing="24px" marginTop={4}>
           <Menu>
             <MenuButton
+              margin={2}
+              height={3}
+              width="100px"
+              fontFamily={"heading"}
               _hover={{
-                borderBottomColor: "black",
+                borderBottomColor: "grey",
                 borderBottomWidth: "2px",
                 fontWeight: "bold",
               }}
@@ -25,8 +29,12 @@ const Navigation: React.FC = () => {
               Illustrators
             </MenuButton>
             <MenuButton
+              height={3}
+              margin={2}
+              width="100px"
+              fontFamily={"heading"}
               _hover={{
-                borderBottomColor: "black",
+                borderBottomColor: "grey",
                 borderBottomWidth: "2px",
                 fontWeight: "bold",
               }}
@@ -34,8 +42,12 @@ const Navigation: React.FC = () => {
               Artists
             </MenuButton>
             <MenuButton
+              height={3}
+              margin={2}
+              width="100px"
+              fontFamily={"heading"}
               _hover={{
-                borderBottomColor: "black",
+                borderBottomColor: "grey",
                 borderBottomWidth: "2px",
                 fontWeight: "bold",
               }}

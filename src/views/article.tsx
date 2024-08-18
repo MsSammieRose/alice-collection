@@ -63,7 +63,10 @@ const Article: React.FC = () => {
               size="xs"
               variant="solid"
               colorScheme="blackAlpha"
-              marginTop="-20px"
+              marginTop="-25px"
+              marginLeft="10px"
+              paddingLeft={1}
+              paddingRight={1}
             >
               ISBN {post.ISBN}
             </Tag>

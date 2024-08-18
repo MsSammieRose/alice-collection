@@ -20,10 +20,7 @@ const Intro: React.FC = () => {
           As part of my personal treasure hunt, I have been collecting unique
           copies of Alice second-hand for almost 10 years.
         </Text>
-        <Text size="sm">
-          To learn more about each copy, I've documented the details of each
-          here.
-        </Text>
+        <Text size="sm">I created this site to document my collection</Text>
       </Box>
     </Center>
   );
