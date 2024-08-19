@@ -13,8 +13,6 @@ import {
   Box,
   Divider,
   Center,
-  useDisclosure,
-  Fade,
   SlideFade,
 } from "@chakra-ui/react";
 
@@ -35,10 +33,14 @@ const typedPosts: Post[] = posts;
 
 const Article: React.FC = () => {
   const [sortCriteria, setSortCriteria] = useState<string>("year");
-  const { isOpen, onToggle } = useDisclosure();
+  const [openCardId, setOpenCardId] = useState<number | null>(null);
 
   const handleSortChange = (event: React.ChangeEvent<HTMLSelectElement>) => {
     setSortCriteria(event.target.value);
+  };
+
+  const handleCardToggle = (id: number) => {
+    setOpenCardId(openCardId === id ? null : id);
   };
 
   const sortedPosts = [...typedPosts].sort((a, b) => {
@@ -88,7 +90,7 @@ const Article: React.FC = () => {
       >
         {sortedPosts.map((post) => (
           <Card
-            onClick={onToggle}
+            onClick={() => handleCardToggle(post.id)}
             key={post.id}
             variant="outline"
             borderColor="paper"
@@ -132,7 +134,7 @@ const Article: React.FC = () => {
                 </Heading>
               </Tag>
             </CardHeader>
-            <SlideFade in={!isOpen}>
+            <SlideFade in={openCardId !== post.id}>
               <CardBody paddingLeft={8}>
                 <p>
                   Illustrated by <strong>{post.illustrator}</strong>
@@ -143,7 +145,7 @@ const Article: React.FC = () => {
                 </p>
               </CardBody>
             </SlideFade>
-            <SlideFade in={isOpen}>
+            <SlideFade in={openCardId === post.id}>
               <CardBody paddingLeft={8} marginTop={-20}>
                 <p>"{post.fact}"</p>
               </CardBody>
