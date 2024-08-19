@@ -12,6 +12,7 @@ const posts = [
     price: "5",
     purchased: "KW Books",
     condition: "Good",
+    fact: "The book binding on this is beautiful, but the art is low-key terrifying.",
   },
   {
     id: 2,
@@ -24,6 +25,7 @@ const posts = [
     price: "7.50",
     purchased: "KW Books",
     condition: "Good",
+    fact: "Under the ugly dust jacket, the book is beautiful.",
   },
   {
     id: 3,
@@ -36,6 +38,7 @@ const posts = [
     price: "1.99",
     purchased: "Value Village",
     condition: "Good",
+    fact: "This version must have been popular because I've seen it in a few places.",
   },
   {
     id: 4,
@@ -48,6 +51,7 @@ const posts = [
     price: "2.49",
     purchased: "Value Village",
     condition: "Good",
+    fact: "It's a pop-up book!",
   },
   {
     id: 5,
@@ -60,6 +64,7 @@ const posts = [
     price: "4.99",
     purchased: "Value Village",
     condition: "Good",
+    fact: "It's still the Tenniel art, but the way they laid it out is stunning.",
   },
   {
     id: 6,
@@ -72,6 +77,7 @@ const posts = [
     price: "3",
     purchased: "KW Books",
     condition: "Good",
+    fact: "The art in this one is really unique.",
   },
   {
     id: 7,
@@ -84,6 +90,7 @@ const posts = [
     price: "4.99",
     purchased: "Value Village",
     condition: "Good",
+    fact: "I love the cover art on this",
   },
   {
     id: 8,
@@ -96,6 +103,7 @@ const posts = [
     price: "8",
     purchased: "Second Look Books",
     condition: "Good",
+    fact: "This is a really unique version of Alice.",
   },
   {
     id: 9,
@@ -108,6 +116,7 @@ const posts = [
     price: "50",
     purchased: "Market Seller",
     condition: "New - Signed",
+    fact: "This is a rare find. Signed by the compiler of the book.",
   },
   {
     id: 10,
@@ -120,6 +129,7 @@ const posts = [
     price: "20",
     purchased: "Old Goat Books",
     condition: "Good",
+    fact: "This is a really heavy copy.",
   },
   {
     id: 11,
@@ -132,6 +142,7 @@ const posts = [
     price: "5.50",
     purchased: "KW Books",
     condition: "Good",
+    fact: "This one doesn't have much going on.",
   },
   {
     id: 12,
@@ -144,6 +155,7 @@ const posts = [
     price: "2.49",
     purchased: "Value Village",
     condition: "Good",
+    fact: "This one is really cute. Very cutesy drawing style.",
   },
   {
     id: 13,
@@ -156,6 +168,7 @@ const posts = [
     price: "20",
     purchased: "Amazon - Used",
     condition: "Good",
+    fact: "This is a beautiful version. And probably my favorite.",
   },
   {
     id: 14,
@@ -168,6 +181,7 @@ const posts = [
     price: "6",
     purchased: "KW Books",
     condition: "Poor",
+    fact: "This one was definitely bought for a school project. It's in rough shape.",
   },
   {
     id: 15,
@@ -180,6 +194,7 @@ const posts = [
     price: "6",
     purchased: "KW Books",
     condition: "Good",
+    fact: "Another basic version.",
   },
   {
     id: 16,
@@ -192,6 +207,7 @@ const posts = [
     price: "6",
     purchased: "KW Books",
     condition: "Good",
+    fact: "A really basic version.",
   },
   {
     id: 17,
@@ -204,6 +220,7 @@ const posts = [
     price: "5",
     purchased: "KW Books",
     condition: "Good",
+    fact: "There is a note inside thanking a teacher. It's very sweet.",
   },
   {
     id: 18,
@@ -216,6 +233,7 @@ const posts = [
     price: "2",
     purchased: "KW Books",
     condition: "Good",
+    fact: "Might be my favorite cover.",
   },
   {
     id: 19,
@@ -228,6 +246,7 @@ const posts = [
     price: "10",
     purchased: "KW Books",
     condition: "Good",
+    fact: "This one is in Latin",
   },
 ];
 

@@ -13,6 +13,9 @@ import {
   Box,
   Divider,
   Center,
+  useDisclosure,
+  Fade,
+  SlideFade,
 } from "@chakra-ui/react";
 
 interface Post {
@@ -25,12 +28,14 @@ interface Post {
   price: string;
   purchased: string;
   condition: string;
+  fact: string;
 }
 
 const typedPosts: Post[] = posts;
 
 const Article: React.FC = () => {
   const [sortCriteria, setSortCriteria] = useState<string>("year");
+  const { isOpen, onToggle } = useDisclosure();
 
   const handleSortChange = (event: React.ChangeEvent<HTMLSelectElement>) => {
     setSortCriteria(event.target.value);
@@ -83,6 +88,7 @@ const Article: React.FC = () => {
       >
         {sortedPosts.map((post) => (
           <Card
+            onClick={onToggle}
             key={post.id}
             variant="outline"
             borderColor="paper"
@@ -126,15 +132,22 @@ const Article: React.FC = () => {
                 </Heading>
               </Tag>
             </CardHeader>
-            <CardBody paddingLeft={8}>
-              <p>
-                Illustrated by <strong>{post.illustrator}</strong>
-              </p>
-              <p>
-                Purchased for ${post.price}CAD from {post.purchased} in{" "}
-                {post.condition} Condition
-              </p>
-            </CardBody>
+            <SlideFade in={!isOpen}>
+              <CardBody paddingLeft={8}>
+                <p>
+                  Illustrated by <strong>{post.illustrator}</strong>
+                </p>
+                <p>
+                  Purchased for ${post.price}CAD from {post.purchased} in{" "}
+                  {post.condition} Condition
+                </p>
+              </CardBody>
+            </SlideFade>
+            <SlideFade in={isOpen}>
+              <CardBody paddingLeft={8} marginTop={-20}>
+                <p>"{post.fact}"</p>
+              </CardBody>
+            </SlideFade>
           </Card>
         ))}
       </Flex>
