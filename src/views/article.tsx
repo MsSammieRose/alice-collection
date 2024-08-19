@@ -47,7 +47,7 @@ const Article: React.FC = () => {
     if (sortCriteria === "year") {
       return a.year.localeCompare(b.year);
     } else if (sortCriteria === "price") {
-      return parseInt(a.price) - parseInt(b.price);
+      return parseFloat(a.price) - parseFloat(b.price);
     }
     return 0;
   });
