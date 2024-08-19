@@ -14,6 +14,9 @@ import {
   Divider,
   Center,
   SlideFade,
+  RadioGroup,
+  Radio,
+  Stack,
 } from "@chakra-ui/react";
 
 interface Post {
@@ -35,8 +38,8 @@ const Article: React.FC = () => {
   const [sortCriteria, setSortCriteria] = useState<string>("year");
   const [openCardId, setOpenCardId] = useState<number | null>(null);
 
-  const handleSortChange = (event: React.ChangeEvent<HTMLSelectElement>) => {
-    setSortCriteria(event.target.value);
+  const handleSortChange = (value: string) => {
+    setSortCriteria(value);
   };
 
   const handleCardToggle = (id: number) => {
@@ -66,19 +69,21 @@ const Article: React.FC = () => {
       </Center>
       <Flex justifyContent="center" margin={6}>
         <label htmlFor="sort">
-          <Heading as="h3" size="md" marginTop={2} marginRight={2}>
+          <Heading as="h3" size="md" marginRight={2}>
             Sort by:
           </Heading>
         </label>
-        <Select
-          id="sort"
-          width="200px"
-          value={sortCriteria}
+        <RadioGroup
           onChange={handleSortChange}
+          value={sortCriteria}
+          fontFamily={"heading"}
+          colorScheme="gray"
         >
-          <option value="year">Year</option>
-          <option value="price">Purchase Price</option>
-        </Select>
+          <Stack direction="row" marginTop="2px">
+            <Radio value="year">Year</Radio>
+            <Radio value="price">Purchase Price</Radio>
+          </Stack>
+        </RadioGroup>
       </Flex>
 
       <Flex
