@@ -146,7 +146,7 @@ const Article: React.FC = () => {
               </CardBody>
             </SlideFade>
             <SlideFade in={openCardId === post.id}>
-              <CardBody paddingLeft={8} marginTop={-20}>
+              <CardBody paddingLeft={8} marginTop="-100px">
                 <p>"{post.fact}"</p>
               </CardBody>
             </SlideFade>
