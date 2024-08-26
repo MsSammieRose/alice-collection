@@ -9,7 +9,6 @@ import {
   Image,
   Flex,
   Tag,
-  Select,
   Box,
   Divider,
   Center,
