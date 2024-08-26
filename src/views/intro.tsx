@@ -1,11 +1,4 @@
-import {
-  Box,
-  Center,
-  Heading,
-  ListItem,
-  OrderedList,
-  Text,
-} from "@chakra-ui/react";
+import { Box, Center, Heading, Text } from "@chakra-ui/react";
 import React from "react";
 import Article from "./article";
 
