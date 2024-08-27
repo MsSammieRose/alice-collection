@@ -1,13 +1,8 @@
 import {
   Menu,
   MenuButton,
-  Button,
-  MenuList,
-  MenuItem,
   Image,
-  HStack,
   VStack,
-  Box,
   Heading,
   Stack,
 } from "@chakra-ui/react";
