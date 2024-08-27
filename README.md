@@ -1,3 +1,5 @@
+See this project live at [https://mssammierose.github.io/alice-collection/](https://mssammierose.github.io/alice-collection/)
+
 # Alice Collection - Wonderland Whimsy
 
 A UX project to catalog my collection of Alice in Wonderland books
