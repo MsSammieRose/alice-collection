@@ -12,7 +12,7 @@ export const App = () => (
     <Router>
       <MainLayout>
         <Routes>
-          <Route path="/" element={<Intro />} />
+          <Route path="" element={<Intro />} />
           <Route path="/article" element={<Article />} />
         </Routes>
       </MainLayout>
