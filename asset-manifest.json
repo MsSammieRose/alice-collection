@@ -1,17 +1,17 @@
 {
   "files": {
-    "main.css": "/somewonderlandwhimsy.com/static/css/main.0642c76a.css",
-    "main.js": "/somewonderlandwhimsy.com/static/js/main.1f747278.js",
-    "static/js/453.43d2eb46.chunk.js": "/somewonderlandwhimsy.com/static/js/453.43d2eb46.chunk.js",
-    "static/media/goudy-bookletter-1911-latin-400-normal.woff2": "/somewonderlandwhimsy.com/static/media/goudy-bookletter-1911-latin-400-normal.0de13906cf8713782d2c.woff2",
-    "static/media/goudy-bookletter-1911-latin-400-normal.woff": "/somewonderlandwhimsy.com/static/media/goudy-bookletter-1911-latin-400-normal.e357ee22e70fa65fd0ac.woff",
-    "index.html": "/somewonderlandwhimsy.com/index.html",
-    "main.0642c76a.css.map": "/somewonderlandwhimsy.com/static/css/main.0642c76a.css.map",
-    "main.1f747278.js.map": "/somewonderlandwhimsy.com/static/js/main.1f747278.js.map",
-    "453.43d2eb46.chunk.js.map": "/somewonderlandwhimsy.com/static/js/453.43d2eb46.chunk.js.map"
+    "main.css": "/static/css/main.18532f15.css",
+    "main.js": "/static/js/main.05e7100f.js",
+    "static/js/453.43d2eb46.chunk.js": "/static/js/453.43d2eb46.chunk.js",
+    "static/media/goudy-bookletter-1911-latin-400-normal.woff2": "/static/media/goudy-bookletter-1911-latin-400-normal.0de13906cf8713782d2c.woff2",
+    "static/media/goudy-bookletter-1911-latin-400-normal.woff": "/static/media/goudy-bookletter-1911-latin-400-normal.e357ee22e70fa65fd0ac.woff",
+    "index.html": "/index.html",
+    "main.18532f15.css.map": "/static/css/main.18532f15.css.map",
+    "main.05e7100f.js.map": "/static/js/main.05e7100f.js.map",
+    "453.43d2eb46.chunk.js.map": "/static/js/453.43d2eb46.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.0642c76a.css",
-    "static/js/main.1f747278.js"
+    "static/css/main.18532f15.css",
+    "static/js/main.05e7100f.js"
   ]
 }
