@@ -112,7 +112,7 @@ const Article: React.FC = () => {
               <Image
                 borderRadius="5px"
                 boxSize="300px"
-                src={"/" + post.id + ".jpg"}
+                src={post.id + ".jpg"}
                 objectFit="cover"
                 alt={post.publisher}
               />

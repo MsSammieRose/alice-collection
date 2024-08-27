@@ -35,7 +35,7 @@ const Navigation: React.FC = () => {
           <Image
             maxHeight={["150px", "150px", "300px"]}
             maxWidth="fit-content"
-            src="/cards.jpg"
+            src="cards.jpg"
             alt="the cards from Alice in Wonderland"
             borderRadius="10px"
             border="4px solid"
@@ -58,7 +58,7 @@ const Navigation: React.FC = () => {
           <Image
             maxHeight={["100px", "100px", "200px"]}
             maxWidth="fit-content"
-            src="/hatter.jpg"
+            src="hatter.jpg"
             alt="the tea party from Alice in Wonderland"
             borderRadius="10px"
             style={{ rotate: "-20deg", zIndex: 2 }}
