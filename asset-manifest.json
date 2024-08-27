@@ -1,17 +1,17 @@
 {
   "files": {
     "main.css": "/alice-collection/static/css/main.89d8086b.css",
-    "main.js": "/alice-collection/static/js/main.c6bd4e9b.js",
+    "main.js": "/alice-collection/static/js/main.ee70d934.js",
     "static/js/453.43d2eb46.chunk.js": "/alice-collection/static/js/453.43d2eb46.chunk.js",
     "static/media/goudy-bookletter-1911-latin-400-normal.woff2": "/alice-collection/static/media/goudy-bookletter-1911-latin-400-normal.0de13906cf8713782d2c.woff2",
     "static/media/goudy-bookletter-1911-latin-400-normal.woff": "/alice-collection/static/media/goudy-bookletter-1911-latin-400-normal.e357ee22e70fa65fd0ac.woff",
     "index.html": "/alice-collection/index.html",
     "main.89d8086b.css.map": "/alice-collection/static/css/main.89d8086b.css.map",
-    "main.c6bd4e9b.js.map": "/alice-collection/static/js/main.c6bd4e9b.js.map",
+    "main.ee70d934.js.map": "/alice-collection/static/js/main.ee70d934.js.map",
     "453.43d2eb46.chunk.js.map": "/alice-collection/static/js/453.43d2eb46.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.89d8086b.css",
-    "static/js/main.c6bd4e9b.js"
+    "static/js/main.ee70d934.js"
   ]
 }
