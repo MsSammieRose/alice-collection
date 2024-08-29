@@ -31,7 +31,7 @@ const Navigation: React.FC = () => {
           </Menu>
         </Stack>
 
-        <Stack direction={["row"]}>
+        <Stack direction={["row"]} overflow="hidden">
           <Image
             maxHeight={["150px", "150px", "300px"]}
             maxWidth="fit-content"
