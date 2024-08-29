@@ -1,4 +1,4 @@
-See this project live at [https://mssammierose.github.io/alice-collection/](https://mssammierose.github.io/alice-collection/)
+This project is hosted with Github Pages and can be viewed at [https://www.somewonderlandwhimsy.com/](https://www.somewonderlandwhimsy.com/)
 
 # Alice Collection - Wonderland Whimsy
 
