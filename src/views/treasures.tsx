@@ -33,10 +33,8 @@ const Treasures: React.FC = () => {
             Books Inspired By Alice in Wonderland
           </Heading>
           <Text size="sm">
-            <p>
-              Alice's Adventures in Wonderland has inspired countless books,
-              movies, and other media.
-            </p>
+            Alice's Adventures in Wonderland has inspired countless books,
+            movies, and other media.
           </Text>
         </Box>
       </Center>

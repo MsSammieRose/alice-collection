@@ -33,15 +33,15 @@ const Disney: React.FC = () => {
             Disney released several adaptations of Alice in Wonderland.
           </Heading>
           <Text size="sm">
-            <p>Alice in Wonderland (1951) - The classic animated feature.</p>
-            <p>
-              Alice in Wonderland (2010) - Directed by Tim Burton, this film is
-              a fantastical reimagining of the classic story.
-            </p>
-            <p>
-              Alice Through the Looking Glass (2016) - A sequel to Burton's 2010
-              film, directed by James Bobin.
-            </p>
+            Alice in Wonderland (1951) - The classic animated feature.
+          </Text>
+          <Text size="sm">
+            Alice in Wonderland (2010) - Directed by Tim Burton, this film is a
+            fantastical reimagining of the classic story.
+          </Text>
+          <Text size="sm">
+            Alice Through the Looking Glass (2016) - A sequel to Burton's 2010
+            film, directed by James Bobin.
           </Text>
         </Box>
       </Center>

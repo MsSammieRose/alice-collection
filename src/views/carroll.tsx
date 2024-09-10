@@ -33,17 +33,14 @@ const Carroll: React.FC = () => {
             Lewis Carroll
           </Heading>
           <Text size="sm">
-            <p>
-              Lewis Carroll, born Charles Lutwidge Dodgson in 1832, was a
-              British author and mathematician famous for his imaginative
-              children’s books, Alice’s Adventures in Wonderland and Through the
-              Looking-Glass. Known for his playful language and quirky
-              characters, Carroll’s stories have fascinated readers for
-              generations and led to numerous adaptations in movies and other
-              media. Besides writing, he was also into photography and had a
-              knack for logic and puzzles, showing his love for exploring how we
-              see and think about the world.
-            </p>
+            Lewis Carroll, born Charles Lutwidge Dodgson in 1832, was a British
+            author and mathematician famous for his imaginative children’s
+            books, Alice’s Adventures in Wonderland and Through the
+            Looking-Glass. Known for his playful language and quirky characters,
+            Carroll’s stories have fascinated readers for generations and led to
+            numerous adaptations in movies and other media. Besides writing, he
+            was also into photography and had a knack for logic and puzzles,
+            showing his love for exploring how we see and think about the world.
           </Text>
         </Box>
       </Center>
