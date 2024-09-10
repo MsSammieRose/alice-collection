@@ -11,7 +11,7 @@ interface MainLayoutProps {
 const MainLayout: React.FC<MainLayoutProps> = ({ children }) => {
   return (
     <Center>
-      <VStack>
+      <VStack mb={6}>
         <Navigation />
         <main>{children}</main>
       </VStack>

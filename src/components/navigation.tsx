@@ -6,9 +6,24 @@ import {
   Heading,
   Stack,
 } from "@chakra-ui/react";
+import { useNavigate } from "react-router-dom";
 
 const Navigation: React.FC = () => {
-  const menuItems = ["Disney", "Lewis Carrol", "Treasures"];
+  const navigate = useNavigate();
+  const menuItems = [
+    {
+      title: "Disney",
+      link: "/disney-books",
+    },
+    {
+      title: "Lewis Carroll",
+      link: "/carroll",
+    },
+    {
+      title: "Treasures",
+      link: "/treasures",
+    },
+  ];
   return (
     <>
       <VStack width="100vw" backgroundColor="paper">
@@ -23,15 +38,16 @@ const Navigation: React.FC = () => {
                 _hover={{
                   fontWeight: "bold",
                 }}
-                key={item}
+                key={item.title}
+                onClick={() => navigate(item.link)}
               >
-                {item}
+                {item.title}
               </MenuButton>
             ))}
           </Menu>
         </Stack>
 
-        <Stack direction={["row"]}>
+        <Stack direction={["row"]} overflow={["hidden", "unset", "unset"]}>
           <Image
             maxHeight={["150px", "150px", "300px"]}
             maxWidth="fit-content"
