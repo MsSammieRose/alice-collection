@@ -28,7 +28,7 @@ const Disney: React.FC = () => {
   return (
     <>
       <Center>
-        <Box textAlign="center" margin={8}>
+        <Box textAlign="center" margin={10} w="60%">
           <Heading as="h1" size="md" marginBottom={4}>
             Disney released several adaptations of Alice in Wonderland.
           </Heading>
@@ -71,7 +71,7 @@ const Disney: React.FC = () => {
               borderColor="paper"
               backgroundColor="paper"
               maxWidth="340px"
-              minHeight="450px"
+              minHeight="480px"
             >
               <CardHeader>
                 <Image

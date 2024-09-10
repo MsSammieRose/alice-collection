@@ -1,5 +1,6 @@
 import React, { ReactNode } from "react";
 import Navigation from "../components/navigation";
+import Footer from "../components/footer";
 import { Center, VStack } from "@chakra-ui/react";
 interface MainLayoutProps {
   children: ReactNode;
@@ -11,12 +12,11 @@ interface MainLayoutProps {
 const MainLayout: React.FC<MainLayoutProps> = ({ children }) => {
   return (
     <Center>
-      <VStack mb={6}>
+      <VStack>
         <Navigation />
         <main>{children}</main>
+        <Footer />
       </VStack>
-
-      <footer>{/* Footer content */}</footer>
     </Center>
   );
 };
