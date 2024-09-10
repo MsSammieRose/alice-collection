@@ -1,6 +1,6 @@
 import * as React from "react";
 
-import disney from "../database/disney";
+import carroll from "../database/carroll";
 import {
   Card,
   CardHeader,
@@ -15,32 +15,34 @@ import {
   Tag,
 } from "@chakra-ui/react";
 
-interface DisneyPost {
+interface CarrollPost {
   id: number;
   slug: string;
   title: string;
   body: string;
 }
 
-const typedDisneyPosts: DisneyPost[] = disney;
+const typedCarollPosts: CarrollPost[] = carroll;
 
-const Disney: React.FC = () => {
+const Carroll: React.FC = () => {
   return (
     <>
       <Center>
         <Box textAlign="center" margin={8}>
           <Heading as="h1" size="md" marginBottom={4}>
-            Disney released several adaptations of Alice in Wonderland.
+            Lewis Carroll
           </Heading>
           <Text size="sm">
-            <p>Alice in Wonderland (1951) - The classic animated feature.</p>
             <p>
-              Alice in Wonderland (2010) - Directed by Tim Burton, this film is
-              a fantastical reimagining of the classic story.
-            </p>
-            <p>
-              Alice Through the Looking Glass (2016) - A sequel to Burton's 2010
-              film, directed by James Bobin.
+              Lewis Carroll, born Charles Lutwidge Dodgson in 1832, was a
+              British author and mathematician famous for his imaginative
+              children’s books, Alice’s Adventures in Wonderland and Through the
+              Looking-Glass. Known for his playful language and quirky
+              characters, Carroll’s stories have fascinated readers for
+              generations and led to numerous adaptations in movies and other
+              media. Besides writing, he was also into photography and had a
+              knack for logic and puzzles, showing his love for exploring how we
+              see and think about the world.
             </p>
           </Text>
         </Box>
@@ -64,7 +66,7 @@ const Disney: React.FC = () => {
           alignItems="center"
           justifyContent="center"
         >
-          {typedDisneyPosts.map((post) => (
+          {typedCarollPosts.map((post) => (
             <Card
               key={post.id}
               variant="outline"
@@ -77,7 +79,7 @@ const Disney: React.FC = () => {
                 <Image
                   borderRadius="5px"
                   boxSize="300px"
-                  src={"disney/dis" + post.id + ".jpg"}
+                  src={"lc/lc" + post.id + ".jpg"}
                   objectFit="cover"
                   alt={post.title}
                 />
@@ -104,4 +106,4 @@ const Disney: React.FC = () => {
   );
 };
 
-export default Disney;
+export default Carroll;

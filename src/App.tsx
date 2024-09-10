@@ -7,6 +7,8 @@ import theme from "./theme";
 import Intro from "./views/intro";
 import "@fontsource/goudy-bookletter-1911/400.css";
 import Disney from "./views/disney";
+import Carroll from "./views/carroll";
+import Treasures from "./views/treasures";
 
 export const App = () => (
   <ChakraProvider theme={theme}>
@@ -16,6 +18,8 @@ export const App = () => (
           <Route path="/" element={<Intro />} />
           <Route path="/article" element={<Article />} />
           <Route path="/disney-books" element={<Disney />} />
+          <Route path="/carroll" element={<Carroll />} />
+          <Route path="/treasures" element={<Treasures />} />
         </Routes>
       </MainLayout>
     </HashRouter>

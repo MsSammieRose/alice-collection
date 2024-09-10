@@ -1,6 +1,6 @@
 import * as React from "react";
 
-import disney from "../database/disney";
+import treasures from "../database/treasures";
 import {
   Card,
   CardHeader,
@@ -15,32 +15,27 @@ import {
   Tag,
 } from "@chakra-ui/react";
 
-interface DisneyPost {
+interface TreasuresPost {
   id: number;
   slug: string;
   title: string;
   body: string;
 }
 
-const typedDisneyPosts: DisneyPost[] = disney;
+const typedTreasuresPosts: TreasuresPost[] = treasures;
 
-const Disney: React.FC = () => {
+const Treasures: React.FC = () => {
   return (
     <>
       <Center>
         <Box textAlign="center" margin={8}>
           <Heading as="h1" size="md" marginBottom={4}>
-            Disney released several adaptations of Alice in Wonderland.
+            Books Inspired By Alice in Wonderland
           </Heading>
           <Text size="sm">
-            <p>Alice in Wonderland (1951) - The classic animated feature.</p>
             <p>
-              Alice in Wonderland (2010) - Directed by Tim Burton, this film is
-              a fantastical reimagining of the classic story.
-            </p>
-            <p>
-              Alice Through the Looking Glass (2016) - A sequel to Burton's 2010
-              film, directed by James Bobin.
+              Alice's Adventures in Wonderland has inspired countless books,
+              movies, and other media.
             </p>
           </Text>
         </Box>
@@ -64,7 +59,7 @@ const Disney: React.FC = () => {
           alignItems="center"
           justifyContent="center"
         >
-          {typedDisneyPosts.map((post) => (
+          {typedTreasuresPosts.map((post) => (
             <Card
               key={post.id}
               variant="outline"
@@ -77,7 +72,7 @@ const Disney: React.FC = () => {
                 <Image
                   borderRadius="5px"
                   boxSize="300px"
-                  src={"disney/dis" + post.id + ".jpg"}
+                  src={"lc/ff" + post.id + ".jpg"}
                   objectFit="cover"
                   alt={post.title}
                 />
@@ -104,4 +99,4 @@ const Disney: React.FC = () => {
   );
 };
 
-export default Disney;
+export default Treasures;

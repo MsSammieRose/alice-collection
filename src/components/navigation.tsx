@@ -6,22 +6,27 @@ import {
   Heading,
   Stack,
 } from "@chakra-ui/react";
+import { title } from "process";
 import { useNavigate } from "react-router-dom";
 
 const Navigation: React.FC = () => {
   const navigate = useNavigate();
   const menuItems = [
     {
+      title: "Home",
+      link: "/",
+    },
+    {
       title: "Disney",
-      link: "/disney-books",
+      link: "disney-books",
     },
     {
       title: "Lewis Carroll",
-      link: "/carroll",
+      link: "carroll",
     },
     {
       title: "Treasures",
-      link: "/treasures",
+      link: "treasures",
     },
   ];
   return (
