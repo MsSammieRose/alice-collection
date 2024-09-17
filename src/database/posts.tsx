@@ -311,6 +311,19 @@ const posts = [
     condition: "Good",
     fact: "This book looks way better without the dust jacket",
   },
+  {
+    id: 25,
+    slug: "post-25",
+    year: "2018",
+    publisher: "Paper Mill Press",
+    printed_country: "China",
+    illustrator: "John Tenniel",
+    ISBN: "978 1 926444 26 0",
+    purchased: "Book Outlet Canada",
+    price: "5.99",
+    condition: "New",
+    fact: "This version is part of a set of 43 classic books.",
+  },
 ];
 
 export default posts;

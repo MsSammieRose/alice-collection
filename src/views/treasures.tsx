@@ -78,7 +78,7 @@ const Treasures: React.FC = () => {
                   size="lg"
                   variant="solid"
                   colorScheme="whiteAlpha"
-                  marginTop={2}
+                  marginTop={6}
                 >
                   <Heading size="md" color="black" marginBottom={0}>
                     {post.title}
